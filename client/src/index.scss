@@ -1,0 +1,94 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    background: lightpink;
+    font-size: 50px;
+    padding: 5px 0;
+}
+
+.inputHolder {
+    margin: 15px 0;
+}
+
+.inputHolder { 
+    padding: 0 10px;
+
+    input[type='text'] {
+        max-width: 400px;
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 0;
+        display: inline-block;
+        border: 1px solid #222;
+        outline: none;
+    }
+
+    .uploadInput { 
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+
+    .uploadImage {
+        margin-top: 10px;
+        font-size: 30px;
+        background: lightpink;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+   
+}
+
+.imageHolder {
+   
+    height: 70vmin;
+    
+    @media (max-width: 800px) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    &:empty {
+        display: none;
+    }
+
+    img {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.button {
+    margin-top: 10px;
+    font-size: 30px;
+    background: lightpink;
+    color: #fff;
+    cursor: pointer;
+}
+
